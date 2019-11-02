@@ -25,7 +25,7 @@ JVM이란 JAVA Virtual Machine, 자바 가상 머신의 약자를 따서 줄여 
 ## << JVM >>
 
 <p align="center">
-  <img src="../assets/img/JVM.PNG"/>
+  <img src="../assets/img/jvm.PNG"/>
 </p>
 
 
