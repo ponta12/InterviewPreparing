@@ -4,7 +4,9 @@
 
 ## #가비지 컬렉션, GC(Garbage Collection)
 
-![Heap](..\assets\img\heap.png)
+<p align="center">
+  <img src="../assets/img/heap.png"/>
+</p>
 
 #### Minor GC
 
@@ -22,7 +24,9 @@ Old영역에 있는 모든 객체들을 검사하여 참조되지 않는 객체�
 
 알고리즘에 따라 동작 방식이 매우 다양하지만 공통적인 원리가 있다. Garbage Collector는 힙 내의 객체 중에서 가비지(Garbage)를 찾아내고 찾아낸 가비지를 처리해서 힙의 메모리를 회수한다. 참조되고 있지 않은 객체(Instance)를 가비지라고 하며 객체가 가비지인지 아닌지 판단하기 위해서 reachability라는 개념을 사용한다. 어떤 힙 영역에 할당된 객체가 유효한 참조가 있으면 **reachability**, 없다면 **unreachability**로 판단한다. 하나의 객체는 다른 객체를 참조하고, 다른 객체는 또 다른 객체를 참조할 수 있기 때문에 참조 사슬이 형성이 되는데, 이 참조 사슬 중 최초에 참조한 것을 Root Set이라고 칭한다. 힙 영역에 있는 객체들은 총 4가지 경우에 대한 참조를 하게 된다.
 
-![GarbageCollection](..\assets\img\GarbageCollection.png)
+<p align="center">
+  <img src="../assets/img/GarbageCollection.png"/>
+</p>
 
 1 = 힙 내의 다른 객체에 의한 참조
 

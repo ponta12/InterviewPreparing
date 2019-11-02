@@ -24,7 +24,9 @@ JVM이란 JAVA Virtual Machine, 자바 가상 머신의 약자를 따서 줄여 
 
 ## << JVM >>
 
-![JVM](..\assets\img\JVM.png)
+<p align="center">
+  <img src="../assets/img/JVM.png"/>
+</p>
 
 
 
@@ -56,7 +58,9 @@ GC를 수행하는 모듈(쓰레드)이 있다.
 
 프로그램을 수행하기 위해 OS에서 할당받은 메모리 공간
 
-![Runtime Data Area](..\assets\img\RuntimeDataArea.png)
+<p align="center">
+  <img src="../assets/img/RuntimeDataArea.png"/>
+</p>
 
 
 
@@ -102,7 +106,9 @@ GC를 수행하는 모듈(쓰레드)이 있다.
 
    객체를 저장하는 가상 메모리 공간이다. new 연산자로 생성된 객체와 배열을 저장한다. 물론 class area영역에 올라온 클래스들만 객체로 생성할 수 있다. 힙은 세 부분으로 나눌 수 있다.
 
-   ![Heap](..\assets\img\heap.png)
+   <p align="center">
+  <img src="../assets/img/heap.png"/>
+   </p>
 
    
 
@@ -111,8 +117,8 @@ GC를 수행하는 모듈(쓰레드)이 있다.
    생성된 객체들의 저어보의 주소값이 저장된 공간이다. Class loader에 의해 load되는 Class, Method 등에 대한 Meta 정보가 저장되는 영역이고 JVM에 의해 사용된다. Reflection을 사용하여 동적으로 클래스가 로딩되는 경우에 사용된다. 내부적으로 Reflection 기능을 자주 사용하는 Spring Framework를 이용할 경우 이 영역에 대한 고려가 필요하다.
 
    #### New / Young 영역
-
-   - Eden : 객체들이 최초로 생성되는 공간
+   
+- Eden : 객체들이 최초로 생성되는 공간
    - Survivor 0 / 1 : Eden에서 참조되는 객체들이 저장되는 공간
 
    #### Old 영역
@@ -120,7 +126,7 @@ GC를 수행하는 모듈(쓰레드)이 있다.
    New area에서 일정 시간 참조되고 있는 살아남은 객체들이 저장되는 공간 Eden 영역에 객체가 가득차게 되면 첫번째 GC(minor GC)가 발생한다. Eden영역에 있는 값들을 Survivor 1 영역에 복사하고 이 영역을 제외한 나머지 영역의 객체를 삭제한다.
 
    
-
+   
    인스턴스는 소멸 방법과 소멸 시점이 지역 변수와는 다르기에 힙이라는 별도의 영역에 할당된다. 자바 가상 머신은 매우 합리적으로 인스턴스를 소멸시킨다. <u>더 이상 인스턴스의 존재 이유가 없을 때 소멸시킨다.</u>
 
 
