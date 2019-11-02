@@ -25,7 +25,7 @@ JVM이란 JAVA Virtual Machine, 자바 가상 머신의 약자를 따서 줄여 
 ## << JVM >>
 
 <p align="center">
-  <img src="../assets/img/JVM.png"/>
+  <img src="../assets/img/JVM.PNG"/>
 </p>
 
 
@@ -59,7 +59,7 @@ GC를 수행하는 모듈(쓰레드)이 있다.
 프로그램을 수행하기 위해 OS에서 할당받은 메모리 공간
 
 <p align="center">
-  <img src="../assets/img/RuntimeDataArea.png"/>
+  <img src="../assets/img/RuntimeDataArea.PNG"/>
 </p>
 
 
@@ -107,7 +107,7 @@ GC를 수행하는 모듈(쓰레드)이 있다.
    객체를 저장하는 가상 메모리 공간이다. new 연산자로 생성된 객체와 배열을 저장한다. 물론 class area영역에 올라온 클래스들만 객체로 생성할 수 있다. 힙은 세 부분으로 나눌 수 있다.
 
    <p align="center">
-  <img src="../assets/img/heap.png"/>
+  <img src="../assets/img/heap.PNG"/>
    </p>
 
    
