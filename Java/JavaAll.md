@@ -7,9 +7,10 @@
 3. [Generic](#Generic)
 4. [final keyword](#final-keyword)
 5. [Overriding vs Overloading](#Overriding-vs-Overloading)
-6. [Wrapper class](#Wrapper-class)
+6. [Access Modifier](#Access-Modifier)
+7. [Wrapper class](#Wrapper-class)
    - [AutoBoxing](#AutoBoxing)
-7. [Multi-Thread 환경에서의 개발](#Multi-Thread-환경에서의-개발)
+8. [Multi-Thread 환경에서의 개발](#Multi-Thread-환경에서의-개발)
    - [Field member](#Field-member)
    - [동기화(Synchronized)](#동기화(Synchronized))
    - [ThreadLocal](#ThreadLocal)
@@ -133,6 +134,38 @@ Annotation이란 본래 주석이란 뜻으로, 인터페이스를 기반으로 
   - Overloaded methods CAN change the access modifier
   - Overloaded methods CAN declare new or broader checked exceptions
   - A method can be overloaded in the same class or in a subclass
+
+
+
+[위로](#Java-전반적인-지식)
+
+
+
+## Access Modifier
+
+변수 또는 메소드의 접근 범위를 설정해주기 위해서 사용하는 Java의 예약어를 의미하며 총 네 가지 종류가 존재한다.
+
+- public
+
+  어떤 클래스에서라도 접근이 가능하다.
+
+
+
+- protected
+
+  클래스가 정의되어 있는 해당 패키지 내 그리고 해당 클래스를 상속받은 외부 패키지의 클래스에서 접근이 가능하다.
+
+
+
+- default
+
+  클래스가 정의되어 있는 해당 패키지 내에서만 접근이 가능하도록 접근 범위를 제한한다.
+
+
+
+- private
+
+  정의된 해당 클래스에서만 접근이 가능하도록 접근 범위를 제한한다.
 
 
 
