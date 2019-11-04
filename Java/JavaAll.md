@@ -12,7 +12,7 @@
    - [AutoBoxing](#AutoBoxing)
 8. [Multi-Thread 환경에서의 개발](#Multi-Thread-환경에서의-개발)
    - [Field member](#Field-member)
-   - [동기화(Synchronized)](#동기화(Synchronized))
+   - [동기화(Synchronized)](#동기화Synchronized)
    - [ThreadLocal](#ThreadLocal)
 
 ## Collection
