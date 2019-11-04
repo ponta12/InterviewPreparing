@@ -24,7 +24,7 @@ JVM이란 JAVA Virtual Machine, 자바 가상 머신의 약자를 따서 줄여 
 
 ##### Reference
 
-- [자바 컴파일 순서](JavaCompile)
+- [자바 컴파일 순서](JavaCompile.md)
 
 
 
