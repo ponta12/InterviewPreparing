@@ -2,7 +2,7 @@
 
 ## # JVM이란?
 
-JVM이란 JAVA Virtual Machine, 자바 가상 머신의 약자를 따서 줄여 부르는 용어이다 (가상머신이란 프로그램의 실행하기 위해 물리적 머시과 유사한 머신을 소프트웨어로 구현한 것이다.) <u>JVM 역할은 자바 애플리케이션을 클래스 로더를 통해 읽어 들여 자바 API와 함께 실행하는 것이다.</u> 그리고 JVM은 JAVA와 OS사이에서 중개자 역할을 수행하여 JAVA가 OS에 구애받지 않고 재사용을 가능하게 해준다. 그리고 가장 중요한 메모리관리, Garbage collection을 수행한다. 그리고 JVM은 **스택기반의 가상머신**이다. ARM 아키텍쳐 같은 하드웨어는 레지스터  기반으로 동작하는데 비해 JVM은 스택기반으로 동작한다.
+JVM이란 JAVA Virtual Machine, 자바 가상 머신의 약자를 따서 줄여 부르는 용어이다 (가상머신이란 프로그램의 실행하기 위해 물리적 머시과 유사한 머신을 소프트웨어로 구현한 것이다.) <u>JVM 역할은 자바 애플리케이션을 클래스 로더를 통해 읽어 들여 자바 API와 함께 실행하는 것이다.</u> 그리고 JVM은 JAVA와 OS사이에서 중개자 역할을 수행하여 JAVA가 **<u>OS에 구애받지 않고 재사용을 가능하게 해준다.</u>** 그리고 가장 중요한 <u>**메모리관리**</u>, <u>**Garbage collection을 수행**</u>한다. 그리고 JVM은 **스택기반의 가상머신**이다. ARM 아키텍쳐 같은 하드웨어는 레지스터  기반으로 동작하는데 비해 JVM은 스택기반으로 동작한다.
 
 
 
@@ -20,7 +20,9 @@ JVM이란 JAVA Virtual Machine, 자바 가상 머신의 약자를 따서 줄여 
 > 4. 로딩된 class파일들은 <u>Execution engine을 통해 해석</u>된다.
 > 5. 해석된 바이트코드는 Runtime Data Areas에 배치되어 실질적인 수행이 이루어지게 된다. 이러한 실행과정 속에서 JVM은 필요에 따라 <u>Thread Synchronization과 GC</u>같은 관리작업을 수행한다.
 
-
+<p align="center">
+  <img src="../assets/img/JavaRunningProcess.png"/>
+</p>
 
 ##### Reference
 
