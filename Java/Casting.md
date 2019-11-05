@@ -42,3 +42,58 @@ int b = (int) true; // (2) 에러 발생 O, boolean은 int로 캐스트 불가
    ```
 
    > 다운캐스팅은 업캐스팅이 발생한 이후에 작용한다.
+
+
+
+##### 예시 문제
+
+```java
+class Parent {
+	int age;
+
+	Parent() {}
+
+	Parent(int age) {
+		this.age = age;
+	}
+
+	void printInfo() {
+		System.out.println("Parent Call!!!!");
+	}
+}
+
+class Child extends Parent {
+	String name;
+
+	Child() {}
+
+	Child(int age, String name) {
+		super(age);
+		this.name = name;
+	}
+
+	@Override 
+	void printInfo() {
+		System.out.println("Child Call!!!!");
+	}
+
+}
+
+public class test {
+    public static void main(String[] args) {
+        Parent p = new Child();
+        
+        p.printInfo(); // 문제1 : 출력 결과는?
+        Child c = (Child) new Parent(); //문제2 : 에러 종류는?
+    }
+}
+```
+
+문제1 : `Child Call!!!!` - `자식의 printInfo함수가 호출됨`
+
+> 자바에서는 오버라이딩된 함수를 동적 바인딩하기 때문에, Parent에 담겼어도 Child의 printInfo() 함수를 불러오게 된다.
+
+문제2 : `Runtime Error`
+
+> 컴파일 과정에서는 데이터형의 일치만 따진다. 프로그래머가 따로 (Child)로 형변환을 해줬기 때문에 컴파일러는 문법이 맞다고 생각해서 넘어간다. 하지만 <u>런타임 과정에서 Child 클래스에 Parent 클래스를 넣을 수 없다는 것을 알게 되고, 런타임 에러가 나오게 되는것!</u>
+
