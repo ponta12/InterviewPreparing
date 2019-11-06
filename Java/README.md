@@ -14,3 +14,5 @@
 
 - ##### [Thread](Thread.md)
 
+- ##### [Java 고유 락 (Intrinsic Lock)](IntrinsicLock.md)
+
