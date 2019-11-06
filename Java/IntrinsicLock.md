@@ -89,4 +89,25 @@ public class Reentrancy {
 
 ## Structured Lock vs Reentrant Lock
 
-#### Structured Lock (구조적)
+#### Structured Lock (구조적 Lock) : 고유 Lock을 이용한 동기화
+
+(Synchronized 블록 단위로 lock의 획득 / 해제가 일어나므로)
+
+따라서,
+
+A획득 -> B획득 -> B해제 -> A해제는 가능하지만,
+
+A획득 -> B획득 -> A해제 -> B해제는 불가능함
+
+이것을 가능하게 하기 위해서는 **Reentrant Lock (명시적 Lock)을 사용**해야 함
+
+
+
+## Visibility
+
+- 가시성 : 여러 Thread가 동시에 작동하였을 때, 한 Thread가 쓴 값을 다른 Thread가 볼 수 있는지, 없는지 여부
+- 문제 : 하나의 Thread가 쓴 값을 다른 Thread가 볼 수 있느냐 없느냐. (볼 수 없으면 문제가 됨)
+- Lock : Structure Lock과 Reentrant Lock은 Visibility를 보장.
+- 원인 :
+  1. 최적화를 위해 Compiler나 CPU에서 발생하는 코드 재배열로 인해서
+  2. CPU core의 cache 값이 Memory에 제때 쓰이지 않아 발생하는 문제
