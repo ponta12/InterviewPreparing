@@ -5,7 +5,7 @@
 - [스케줄러](Scheduler.md)
 - [CPU 스케줄러](CPUSchedule.md)
 - [동기와 비동기의 차이](SyncAndAsync.md)
-- [프로세스 동기화]
+- [프로세스 동기화](ProcessSync.md)
 - [메모리 관리 전략]
 - [가상 메모리]
 - [캐시의 지역성]
